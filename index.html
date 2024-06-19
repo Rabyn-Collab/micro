@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Jee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+      }
+
+      main {
+        padding: 20px 40px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .left-side {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        padding-right: 25px;
+      }
+
+      a {
+        text-decoration: none;
+        padding-right: 10px;
+        color: rgb(72, 63, 63);
+      }
+
+      a:hover {
+        text-decoration: underline solid black;
+        text-underline-offset: 7px;
+      }
+
+      .dis-section {
+        height: 350px;
+        background-image: url('assets/showcase.jpg');
+        margin: 20px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 6%;
+      }
+
+      .dis-info {
+        text-align: center;
+      }
+
+      .dis-info p {
+        padding: 12px 0 20px 0;
+      }
+
+      .bts {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      .bts:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+      }
+
+      .prod-info img {
+        margin-bottom: 15px;
+      }
+
+      .learn {
+        color: #0067B8;
+        cursor: pointer;
+      }
+
+      .learn button:hover {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .learn button {
+        border: none;
+        background-color: transparent;
+        color: #0067B8;
+        transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .x-box {
+        height: 360px;
+        background-image: url('assets/xbox.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 25px 0 10px 0;
+        padding: 10% 0 0 4%;
+      }
+
+      .x-info {
+        width: 40%;
+      }
+
+      .x-info p {
+        padding: 15px 0 20px 0;
+        word-spacing: 2px;
+        line-height: 1.3rem;
+      }
+
+      @media (max-width: 720px) {
+        .x-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-position: center;
+          background-color: rgb(205, 201, 201);
+          background-blend-mode: darken;
+        }
+
+
+        .x-info {
+          width: 100%;
+          padding: 0;
+        }
+
+        .x-info p {
+          font-weight: 500;
+        }
+
+      }
+
+
+      @media (max-width: 620px) {
+        .right-side {
+          display: none;
+        }
+      }
+
+      @media (max-width: 550px) {
+        .logo {
+          margin-bottom: 5px;
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+  </head>
+
+  <body>
+    <main>
+
+
+      <header>
+        <div class="left-side">
+          <div class="logo">
+            <img style="height: 23px;" src="assets/logo.png" alt="">
+          </div>
+          <nav>
+            <a href="">Office</a>
+            <a href="">Windows</a>
+            <a href="">Surface</a>
+            <a href="">Xbox</a>
+            <a href="">Deals</a>
+            <a href="">Support</a>
+          </nav>
+        </div>
+        <div class="right-side">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          &nbsp;&nbsp;
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        </div>
+      </header>
+
+
+
+      <section class="dis-section">
+
+        <div class="dis-info">
+          <h2>Surface Deals</h2>
+          <p>Select Surfaces are on sale now - save while supplies last </p>
+          <button class="bts">Shop Now <i class="fa-solid fa-chevron-right"></i> </button>
+        </div>
+
+      </section>
+
+
+      <section class="products">
+
+
+        <div class="prod-info">
+          <img src="assets/card1.png" alt="">
+          <h2>New Surface Pro 7</h2>
+          <p style="padding: 7px 0 17px 0;">See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put
+            her plans into play.</p>
+          <div class="learn">
+            <button>LEARN MORE</button>
+
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+        </div>
+
+        </div>
+        <div class="prod-info">
+          <img src="assets/card2.png" alt="">
+          <h2>New Surface Pro 7</h2>
+          <p style="padding: 7px 0 17px 0;">See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put
+            her plans into play.</p>
+          <div class="learn">
+            <button>LEARN MORE</button>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+        </div>
+        <div class="prod-info">
+          <img src="assets/card3.png" alt="">
+          <h2>New Surface Pro 7</h2>
+          <p style="padding: 7px 0 17px 0;">See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put
+            her plans into play.</p>
+          <div class="learn">
+            <button>LEARN MORE</button>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+        </div>
+        <div class="prod-info">
+          <img src="assets/card4.png" alt="">
+          <h2>New Surface Pro 7</h2>
+          <p style="padding: 7px 0 17px 0;">See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put
+            her plans into play.</p>
+          <div class="learn">
+            <button>LEARN MORE</button>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+
+
+
+      <section class="x-box">
+
+        <div class="x-info">
+          <h1>Xbox Game Pass Ultimate</h1>
+          <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with
+            friends and discover your next favorite game.</p>
+
+          <button class="bts">Join Now <i class="fa-solid fa-chevron-right"></i></button>
+
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer></footer>
+
+    <script>
+      const rev = ScrollReveal({
+        distance: '50%',
+        delay: 200
+      });
+      rev.reveal('.logo', { origin: 'left' });
+      rev.reveal('nav', { origin: 'top' });
+      rev.reveal('.right-side', { origin: 'right' });
+      rev.reveal('.x-box', { origin: 'right' });
+      rev.reveal('.prod-info', {
+        origin: 'left',
+        distance: '60%',
+        interval: 250
+      });
+
+    </script>
+
+  </body>
+
+</html>
